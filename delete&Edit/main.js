@@ -2,7 +2,7 @@ var forForm  = document.querySelector('#addForm');
 // console.log(forForm);
 var forList = document.querySelector('#items');
 // console.log(forList);
-forList.createElement('BUTTON');
+
 
 forList.addEventListener('click', removeItem);
 forForm.addEventListener('submit', addItem);
