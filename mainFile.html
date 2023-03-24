@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2 class="py-3 text-center">Have track of your expenses here:</h2>
+        <div class="row">
+            
+    <form id="my-form" target="_self" onsubmit="printDetails(event)">
+        <div class="col-md">
+        <div class="mb-3">
+          <label for="expenseAmount" class="form-label">Type your expense amount:</label>
+          <input type="text" class="form-control" id="expenseAmount" name="amount">
+          <small class="form-text text-muted">
+            Minimum amount should be zero
+        </small>
+        </div>
+    </div>
+    <div class="col-md">
+        <div class="mb-3">
+          <label for="exenseDescription" class="form-label">Choose Description:</label>
+          <input type="text" class="form-control" id="expenseDescription" name="description">
+          <small class="form-text text-muted">
+            This space can't left blank
+        </small>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="mb-3">
+          <label class="form-text" for="expenseCategory">Choose a Category:</label>
+          <select name="category" id="expenseCategory" class="form-control">
+            <option value="">Movie</option>
+            <option value="">Fuel</option>
+            <option value="">Fast Food</option>
+            <option value="">Shopping</option>
+            <option value="">Laundry</option>
+            <br>
+        </select>
+        
+        </div>
+    </div>
+        <button type="submit" class="btn btn-primary">Add Expenses</button>
+      </form>
+    </div>
+    
+    </div>
+   <div class="container">
+    <h2 class="display" id='display'>
+
+    </h2>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
